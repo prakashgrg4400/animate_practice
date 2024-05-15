@@ -1,8 +1,7 @@
 let heading = document.querySelector("#heading");
-console.log(heading);
-
+let container = document.querySelector(".container");
 let buttons = document.querySelectorAll(".side-nav .animate-buttons button");
-console.log(buttons);
+console.log(container);
 
 const showAnimations = document.querySelector(".show-animations");
 
@@ -62,6 +61,7 @@ function handleToggle(event) {
     showAnimations.style.backgroundColor = "#15151D";
     showAnimations.style.color = "#E0E0E0";
     showAnimations.style.borderColor = "#E0E0E0";
+    container.style.backgroundColor = "black";
     buttons.forEach((button) => {
       button.style.color = "#E0E0E0";
     });
@@ -76,6 +76,7 @@ function handleToggle(event) {
     showAnimations.style.backgroundColor = "transparent";
     showAnimations.style.color = "#351C75";
     showAnimations.style.borderColor = "#351C75";
+    container.style.backgroundColor = "blanchedalmond";
     buttons.forEach((button) => {
       button.style.color = "#000000";
     });
