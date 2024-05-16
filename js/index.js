@@ -1,7 +1,7 @@
 let heading = document.querySelector("#heading");
 let container = document.querySelector(".container");
 let buttons = document.querySelectorAll(".side-nav .animate-buttons button");
-console.log(container);
+// console.log(container);
 
 const showAnimations = document.querySelector(".show-animations");
 
@@ -10,7 +10,7 @@ buttons.forEach((button) => {
 });
 
 function handleAnimation(event) {
-  console.log(event.target);
+  // console.log(event.target);
   heading.classList.add(
     "animate__animated",
     `animate__${event.target.textContent}`
@@ -41,7 +41,7 @@ let sidenav = document.querySelector(".side-nav");
 let sun = document.querySelector(".sun");
 let moon = document.querySelector(".moon");
 let btnHeader = document.querySelector("h4");
-console.log(moonOrSun);
+// console.log(moonOrSun);
 
 moonOrSun.forEach((btn) => {
   btn.addEventListener("click", handleToggle);
@@ -84,7 +84,7 @@ function handleToggle(event) {
 }
 
 //!============ handeling show and hide of side nav =====================
-console.log(showAnimations);
+// console.log(showAnimations);
 showAnimations.addEventListener("click", handleShowAnimation);
 
 function handleShowAnimation(event) {
